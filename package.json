@@ -1,0 +1,19 @@
+{
+  "name": "asgn-api",
+  "version": "1.0.0",
+  "description": "Web Api",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Boomer0/asgn-api.git"
+  },
+  "author": "Isaiah Kuznia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Boomer0/asgn-api/issues"
+  },
+  "homepage": "https://github.com/Boomer0/asgn-api#readme"
+}
