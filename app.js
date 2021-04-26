@@ -8,11 +8,11 @@ let app = express();
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
-// mongoose.connect("mongodb://localhost/asgn")
-//     .once("open", () => console.log("DB connection successful"))
-//     .on("error", (error) => console.log("Error:", error));
+mongoose.connect("mongodb://localhost/asgn", {useNewUrlParser: true})
+    .once("open", () => console.log("DB connection successful"))
+    .on("error", (error) => console.log("Error:", error));
 
-// app.use("/", router);
+app.use("/", router);
 
 app.listen(port, function () {
     console.log("Server launched on port " + port);
