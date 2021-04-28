@@ -4,3 +4,5 @@ const controller = require("./asgn-controller.js");
 router.get("/", function (req, res) {
     res.send("API is up and running");
 })
+
+module.exports = router;
