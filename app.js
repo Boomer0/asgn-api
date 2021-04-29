@@ -19,7 +19,7 @@ if(!mongoose.connection) {
 const port = 8080;
 
 app.get('/', (req, res) => res.send("There's nothing here yet. Try /asgn"))
-app.use('/asgn', router);
+app.use('/api', router);
 
 app.listen(port, function () {
     console.log("Server launched on port " + port);
