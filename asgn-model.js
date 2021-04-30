@@ -2,11 +2,16 @@ const mongoose = require('mongoose');
 
 const asgnSchema = mongoose.Schema({
     courseName: String,
-    assignmentName: {
+    asgnName: {
         type: String,
-        required: true
+        required: true,
+        unique: true
     },
     dueDate: Date
 });
 
-module.exports = mongoose.model("assignments", asgnSchema);
+var asgn = module.exports = mongoose.model("asgn", asgnSchema);
+
+module.exports.get = function (callback, limit) {
+    asgn.find(callback).limit(limit);
+}
